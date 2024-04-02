@@ -21,10 +21,28 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.azisprtm.basicexporeactnative"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "scheme": "myapp",
+    "extra": {
+      "eas": {
+        "projectId": "ee776926-9e4e-4b12-bd0b-2ac2dc3f7425"
+      }
     }
   }
 }
